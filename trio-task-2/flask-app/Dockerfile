@@ -4,7 +4,7 @@ WORKDIR /app
 # Copy contents into image
 COPY app.py .
 COPY requirements.txt .
-COPY templates ./
+COPY templates/home.html ./templates/home.html
 # install pip dependencies from requirements file
 RUN pip install -r requirements.txt
 # Expose correct port
