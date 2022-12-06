@@ -17,8 +17,8 @@ services:
       source: ./nginx/nginx.conf
       target: /etc/nginx/nginx.conf
   db:
+    image: mysql:5.7
     volumes:
-      image: mysql:5.7
     - type: bind
       source: ./db/CreateTable.sql
       target: /etc/db/CreateTable.sql
