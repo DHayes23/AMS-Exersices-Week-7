@@ -18,6 +18,7 @@ services:
       target: /etc/nginx/nginx.conf
   db:
     volumes:
+      build: ./db
     - type: bind
       source: ./db/CreateTable.sql
       target: /etc/db/CreateTable.sql
